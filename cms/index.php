@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 
 $p = 'db'; //output of page from database
 $p = 'file'; // output of page from HTML-file
@@ -23,10 +24,12 @@ $tpl->set_value('DESCRIPTION', $description);
 $tpl->set_value('INFO', $info);
 
 //here will be menu
-$menu = "Soon here will be menu
-<br>Sub 1
-<br>Sub 2
-<br>Sub 3";
+//$menu = "Soon here will be menu
+//<br>Sub 1
+//<br>Sub 2
+//<br>Sub 3";
+
+include "menu.php";
 
 $tpl->set_value('MENU', $menu);
 
