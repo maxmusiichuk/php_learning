@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+//error_reporting(0);
 
 $p = 'db'; //output of page from database
 $p = 'file'; // output of page from HTML-file
@@ -9,8 +9,8 @@ $p = 'server'; // output page from server
 require "config.php";
 
 //connect ot database
-mysqli_connect($dbhost, $dbuser, $dbpassword,);
-mysqli_select_db($dbname);
+$link = mysqli_connect($dbhost, $dbuser, $dbpassword,);
+mysqli_select_db($link,$dbname);
 
 //template connection
 require "template.php";

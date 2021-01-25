@@ -1,5 +1,6 @@
 <?php
 //$menu = 0;
+
 $q = "select * from cats where root=-1";
 $r = mysqli_query($q);
 
@@ -8,7 +9,7 @@ $is_ext_menu = 0; // dont show menu
 if ($p === "showpage") {
 
     //finding a number of showing page
-    $qur = "select * from pages where id =$id";
+    $qur = "select * from pages where id=$id";
     $res = @mysqli_query($qur);
     $row = @mysqli_fetch_array($res);
 
