@@ -1,8 +1,10 @@
 <?php
 //$menu = 0;
-
-$q = "select * from cats where root=-1";
-$r = mysqli_query($q);
+$mysqli = new mysqli($dbhost, $dbuser, $dbpassword, $dbname);
+$mysqli->set_charset("utf8mb4");
+$q = $mysqli->query('SELECT * FROM `cats` where root=-1');
+//$q = "select * from cats where root=-1";
+$r = $q;
 
 $is_ext_menu = 0; // dont show menu
 

@@ -8,5 +8,5 @@ $dbpassword = 'pass';
 //site info
 
 $title = 'CMS v0.01';
-$description = 'Description of site';
+$description = 'Simple CMS made by Max Musiichuk';
 $info = '<p>&copy; Musan013k</p>';
